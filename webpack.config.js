@@ -78,6 +78,11 @@ module.exports = {
                     to: path.join(__dirname, 'dist/fonts'),
                     noErrorOnMissing: true
                 },
+                {
+                    from: path.join(__dirname, 'src/video'),
+                    to: path.join(__dirname, 'dist/video'),
+                    noErrorOnMissing: true
+                },
             ]
         }),
     ]
