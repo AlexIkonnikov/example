@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
+    target: 'web',
     entry: path.join(__dirname, './src/js/index.js'),
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -45,9 +46,6 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        watchContentBase: true,
-        compress: true,
         port: 3000,
     },
     plugins: [
@@ -62,6 +60,7 @@ module.exports = {
                 {
                     from: path.join(__dirname, 'src/img'),
                     to: path.join(__dirname, 'dist/img'),
+                    noErrorOnMissing: true
                 },
             ]
         }),

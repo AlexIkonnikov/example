@@ -1,11 +1,2 @@
 @import "_var.scss";
 @import "_fonst.scss";
-
-body{
-    background-color: $secondary-color;
-}
-
-div {
-    display:  flex;
-    flex-direction: column;
-}
