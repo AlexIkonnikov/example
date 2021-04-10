@@ -1,27 +1,24 @@
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../fonts/Proxima-Nova-Regular.woff') format('woff'),
-    url('../fonts/Proxima-Nova-Regular.ttf') format('truetype');
+    src: url('./../fonts/ProximaNova-Regular.woff') format('woff'),
+    url('./../fonts/Proxima-NovaRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../fonts/Proxima-Nova-Semibold.woff') format('woff'),
-    url('../fonts/Proxima-Nova-Semibold.ttf') format('truetype');
+    src: url('./../fonts/ProximaNova-Semibold.woff') format('woff'),
+    url('./../fonts/ProximaNova-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
 }
 
 @font-face {
     font-family: 'Proxima Nova';
-    src: url('../fonts/Proxima-Nova-Bold.woff2') format('woff2'),
-    url('../fonts/Proxima-Nova-Bold.woff') format('woff');
+    src: url('./../fonts/Proxima-Nova-Bold.woff2') format('woff2'),
+    url('./../fonts/Proxima-Nova-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-    font-display: swap;
 }
 

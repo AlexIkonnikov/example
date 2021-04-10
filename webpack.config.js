@@ -9,6 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js',
+
         clean: true,
     },
     module: {
@@ -17,7 +18,12 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader, 
-                    "css-loader",
+                    {
+                        loader: "css-loader",
+                         options: {
+                             url: false,
+                         }
+                    },
                     {
                         loader: "postcss-loader",
                         options: {
@@ -25,8 +31,13 @@ module.exports = {
                                 plugins: [require('autoprefixer')]
                             }
                         }
-                    }, 
-                    "sass-loader"
+                    },
+                    {   
+                        loader: "sass-loader",
+                        options: {
+                            sourceMap: true,
+                        }
+                    }
                 ],
             },
             {
@@ -60,6 +71,11 @@ module.exports = {
                 {
                     from: path.join(__dirname, 'src/img'),
                     to: path.join(__dirname, 'dist/img'),
+                    noErrorOnMissing: true
+                },
+                {
+                    from: path.join(__dirname, 'src/fonts'),
+                    to: path.join(__dirname, 'dist/fonts'),
                     noErrorOnMissing: true
                 },
             ]

@@ -29,5 +29,9 @@
     "defaults",
     "not ie < 9",
     "last 2 versions"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "3.6.0",
+    "slick-carousel": "1.8.0"
+  }
 }

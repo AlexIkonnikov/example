@@ -1,2 +1,3 @@
+import './slick.js'
 import '../scss/main.scss';
-console.log('test');
+import '../scss/media.scss';
