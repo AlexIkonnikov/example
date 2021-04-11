@@ -59,7 +59,6 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
         port: 3000,
     },
     plugins: [
@@ -76,11 +75,11 @@ module.exports = {
                     to: path.join(__dirname, 'dist/img'),
                     noErrorOnMissing: true
                 },
-                {
+                /*{
                     from: path.join(__dirname, 'src/video'),
                     to: path.join(__dirname, 'dist/video'),
                     noErrorOnMissing: true
-                },
+                },*/
             ]
         }),
     ]
