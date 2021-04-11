@@ -9,7 +9,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/bundle.js',
-
         clean: true,
     },
     module: {
@@ -75,11 +74,6 @@ module.exports = {
                     to: path.join(__dirname, 'dist/img'),
                     noErrorOnMissing: true
                 },
-                /*{
-                    from: path.join(__dirname, 'src/video'),
-                    to: path.join(__dirname, 'dist/video'),
-                    noErrorOnMissing: true
-                },*/
             ]
         }),
     ]
