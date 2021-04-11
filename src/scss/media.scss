@@ -153,6 +153,10 @@
             border-radius: 5px;
             &--open {
                 display: block;
+                position: absolute;
+                top: 50px;
+                left: 0px;
+                width: 100%;
             }
         }
 
@@ -164,6 +168,7 @@
 
         &__toggle {
             display: block;
+            top: 20px;
         }
     }
 
@@ -184,7 +189,30 @@
 
     .slick-slide img {
         display: none;
-    } 
+    }
+    
+    .page {
+        &__container {
+            &--menu {
+                position: fixed;
+                z-index: 999;
+                height: 50px;
+                top: 0;
+                width: 100%;
+                background-color: darkblue;
+            }
+        }
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header {
+        &__slider-container {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media screen and (max-width: 665px) {
