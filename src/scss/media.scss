@@ -1,3 +1,53 @@
+@media screen and (max-width: 1550px) {
+    .footer {
+        &__logo {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .slider {
+        &__img {
+            margin-right: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .navigation {
+        &__wrapper {
+            padding-left: 20px;
+            padding-right: 40px;
+        }
+    }
+
+    .slider {
+        padding-left: 80px;
+        padding-right: 40px;
+    }
+
+    .overview {
+        padding: 100px 10px 114px 10px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .statistics {
+        &__container {
+            padding: 127px 70px 134px;
+        }
+
+        &__number {
+            font-size: 40px;
+        }
+
+        &__description {
+            font-size: 10px;
+        }
+    }
+}
+
 @media screen and (max-width: 975px) {
     .header {
         
@@ -14,25 +64,77 @@
         }
     }
 
-}
+    .slider {
+        padding-bottom: 50px;
 
-@media screen and (max-width: 550px) {
-    .header {
-        &__find-out-more {
-            padding: 0;
+        &__img {
+            margin-right: 30px;
         }
     }
-    
 }
 
-@media screen and (max-width: 1200px) {
-    .navigation {
+@media screen and (max-width: 950px) {
+    .work-list {
+
+        &__item {
+            margin: 10px;
+        }
+
+        &__wrapper-img {
+            max-width: 150px;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .overview {
+        padding: 50px 10px 50px 10px;
+
         &__wrapper {
-            padding-left: 20px;
-            padding-right: 40px;
+            display: block;
         }
+
+        &__inner {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        &__link {
+            margin: 0 auto;
+            width: 90%;
+        }
+
     }
 
+    .overview {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .video {
+        &__window {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .footer {
+        &__container {
+            flex-wrap: wrap;
+            padding: 10px 30px;
+        }
+
+        &__section {
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+    }
 }
 
 @media screen and (max-width: 760px) {
@@ -64,73 +166,7 @@
             display: block;
         }
     }
-    
-}
 
-@media screen and (max-width: 1400px) {
-    .slider {
-        &__img {
-            margin-right: 100px;
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .slider {
-        padding-left: 80px;
-        padding-right: 40px;
-    }
-}
-
-@media screen and (max-width: 975px) {
-    .slider {
-        padding-bottom: 50px;
-
-        &__img {
-            margin-right: 30px;
-        }
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .slider {
-        padding-left: 15px;
-        padding-right: 30px;
-        padding-bottom: 20px;
-
-        &__header {
-            font-size: 35px;
-        }
-
-        &__text {
-            font-size: 12px;
-        }
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .slick-slide img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .statistics {
-        &__container {
-            padding: 127px 70px 134px;
-        }
-
-        &__number {
-            font-size: 40px;
-        }
-
-        &__description {
-            font-size: 10px;
-        }
-    }
-}
-
-@media screen and (max-width: 760px) {
     .statistics {
 
         &__container {
@@ -144,8 +180,11 @@
         &__item {
             flex-basis: 100px;
         }
-
     }
+
+    .slick-slide img {
+        display: none;
+    } 
 }
 
 @media screen and (max-width: 665px) {
@@ -160,32 +199,7 @@
             margin-bottom: 10px;
         }
     }
-}
 
-@media screen and (max-width: 400px) {
-    .what-we-do {
-
-        &__container {
-            padding: 20px 15px 20px 15px;
-        }
-    }
-}
-
-@media screen and (max-width: 950px) {
-    .work-list {
-
-        &__item {
-            margin: 10px;
-        }
-
-        &__wrapper-img {
-            max-width: 150px;
-            height: auto;
-        }
-    }
-}
-
-@media screen and (max-width: 665px) {
     .work-list {
 
         &__item {
@@ -206,58 +220,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-
-    .overview {
-        padding: 100px 10px 114px 10px;
-    }
-
-}
-
-@media screen and (max-width: 940px) {
-
-    .overview {
-        padding: 50px 10px 50px 10px;
-
-        &__wrapper {
-            display: block;
-        }
-
-        &__inner {
-            margin: 0 auto;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-
-        &__link {
-            margin: 0 auto;
-            width: 90%;
-        }
-
-    }
-
-}
-
-@media screen and (max-width: 940px) {
-
-    .overview {
-        padding: 20px 10px 20px 10px;
-    }
-
-}
-
-@media screen and (max-width:940px) {
-    .video {
-        &__window {
-            margin: 0 auto;
-            display: block;
-            width: 100%;
-            height: 100%;
-        }
-    }
-}
-
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .video {
         &__overlay {
             margin-left: -110px;
@@ -272,6 +235,28 @@
             order: 2;
             margin-bottom: 10px;
             font-size: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header {
+        &__find-out-more {
+            padding: 0;
+        }
+    }
+
+    .slider {
+        padding-left: 15px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+
+        &__header {
+            font-size: 35px;
+        }
+
+        &__text {
+            font-size: 12px;
         }
     }
 }
@@ -293,41 +278,23 @@
             width: 80%;
         }
     }
-}
 
-@media screen and (max-width: 1550px) {
-    .footer {
-        &__logo {
-            display: none;
-        }
+    .section {
+        margin-bottom: 10px;
     }
-}
 
-@media screen and (max-width:780px) {
-    .footer {
-        &__container {
-            flex-wrap: wrap;
-            padding: 10px 30px;
-        }
-
-        &__section {
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-    }
-}
-
-@media screen and (max-width:500px) {
-    .footer {
+   .footer {
         &__twitter {
             margin: 0 auto;
         }
     }
 }
 
-@media screen and (max-width:500px) {
-    .section {
-         margin-bottom: 10px;
-    }
+@media screen and (max-width: 400px) {
+    .what-we-do {
 
+        &__container {
+            padding: 20px 15px 20px 15px;
+        }
+    }
 }
