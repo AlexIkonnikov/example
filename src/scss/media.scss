@@ -146,14 +146,16 @@
         }
 
         &__list {
-            display: none;
+            display: block;
             margin-top: 0px;
             min-width: 290px;
             background-color: white;
             border-radius: 5px;
+            top: 50px;
+            left: -1000px;
+            transition: all 0.3s ease;
+            position: absolute;
             &--open {
-                display: block;
-                position: absolute;
                 top: 50px;
                 left: 0px;
                 width: 100%;

@@ -16,6 +16,7 @@ $('.single-item').slick({
 
 $('.navigation__toggle').on('click', function() {
     $('.navigation__list').toggleClass('navigation__list--open');
+    $('.navigation__toggle').toggleClass('navigation__toggle--open')
 });
 
 $('.find-out-more__link').on('click', function(evt) {
