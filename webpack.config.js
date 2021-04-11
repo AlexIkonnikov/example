@@ -17,12 +17,14 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                    MiniCssExtractPlugin.loader, 
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                          publicPath: './../',
+                        },
+                    },
                     {
                         loader: "css-loader",
-                         options: {
-                             url: false,
-                         }
                     },
                     {
                         loader: "postcss-loader",
@@ -48,7 +50,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.(ttf|woff|woff2)$/i,
+                test: /\.(eot|ttf|woff|woff2|otf)$/i,
                 type: 'asset/resource',
                 generator: {
                     filename: 'fonts/[name][ext]'
@@ -57,6 +59,7 @@ module.exports = {
         ]
     },
     devServer: {
+        contentBase: path.join(__dirname, 'dist'),
         port: 3000,
     },
     plugins: [
@@ -71,11 +74,6 @@ module.exports = {
                 {
                     from: path.join(__dirname, 'src/img'),
                     to: path.join(__dirname, 'dist/img'),
-                    noErrorOnMissing: true
-                },
-                {
-                    from: path.join(__dirname, 'src/fonts'),
-                    to: path.join(__dirname, 'dist/fonts'),
                     noErrorOnMissing: true
                 },
                 {

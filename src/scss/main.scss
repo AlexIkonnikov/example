@@ -253,29 +253,24 @@
 
     &__vector {
         position: relative;
-        &:after {
+        &:after, &::before {
             position: absolute;
             content: '';
             display: block;
             width: 20px;
             height: 5px;
             background-color: #ff8b00;
+            top: 55%;
+        }
+        &:after {
             transform: rotate(45deg);
             left: 50%;
-            top: 50%;
             margin-left: -17px;
         }
         
         &:before {
-            position: absolute;
-            content: '';
-            display: block;
-            width: 20px;
-            height: 5px;
-            background-color: #ff8b00;
             transform: rotate(-45deg);
             right: 50%;
-            top: 50%;
             margin-right: -15px;
         }
     }
