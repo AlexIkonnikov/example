@@ -326,26 +326,22 @@
         text-align: right;
         font-weight: 700;
         color: #7050e5;
-        &:after {
+        &:after, &::before {
             content: "";
             position: absolute;
             display: block;
-            top:-15px;
-            right: -24px;
             width: 46px;
             height: 12px;
             background-color: #ff8b00;
+        }
+        &:after {
+            top:-15px;
+            right: -24px;
             transform: rotate(90deg);
         }
         &::before {
-            content: "";
             top:-32px;
-            right: -6px;
-            position: absolute;
-            display: block;
-            width: 46px;
-            height: 12px;
-            background-color: #ff8b00;        
+            right: -6px;        
         }
     }
 
