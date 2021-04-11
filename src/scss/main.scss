@@ -433,7 +433,7 @@
 
 .video {
     position: relative;
-
+    cursor: pointer;
     &__overlay {
         position: absolute;
         margin-left: -285px;
@@ -698,16 +698,16 @@
         font-weight: 400;
         color: white;
         text-transform: uppercase;
+
+        &:hover {
+            color: #ff8b00;
+            transition: 0.3s;
+        }
     }
 
-    &__mail {
+    &__mail, &__phone{
         text-transform: lowercase;
         padding-left: 15px;
+        color: white;
     }
-
-    &__phone { 
-        text-transform: lowercase;
-        padding-left: 15px;
-    }
-    
 }

@@ -188,10 +188,7 @@
                         <p class="video__text">Feature video</p>
                         <button class="video__control"></button>
                     </div>
-                    <video class="video__window" poster="img/preview.png">
-                        <source src="video/mSignConnectedToken.mp4">
-                        <source src="video/mSignConnectedToken.avi">
-                    </video>
+                        <img class="video__window" src="img/preview.png" />
                 </div>
             </div>
         </section>
@@ -216,7 +213,17 @@
                             <p class="twitter__feed">Twitter feed</p>
                         </div>
                     </div>
-                    <div><a class="twitter-timeline" data-width="300" data-height="295" data-theme="light" href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">Tweets by saltgroup</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+                    <div>
+                        <a class="twitter-timeline" 
+                        data-width="300" 
+                        data-height="295" 
+                        data-theme="light" 
+                        data-chrome="nofooter noscrollbar"
+                        href="https://twitter.com/saltgroup?ref_src=twsrc%5Etfw">
+                        Tweets by saltgroup
+                    </a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
                 </div>
                 <div class="footer__section">
                     <section class="section">
@@ -242,8 +249,8 @@
                     <section class="section">
                         <h3 class="section__header">Contact sales</h3>
                         <ul class="section__list">
-                            <li class="section__item"><a href=# class="section__link">Phone:<span class="section__phone">+61 3 9614 4416</span></a></li>
-                            <li class="section__item"><a href=# class="section__link">Email:<span class="section__mail">sales@saltgroup.com.au</span></a></li>
+                            <li class="section__item"><span class="section__link">Phone:<a class="section__phone" href="tel:+61396144416">+61 3 9614 4416</a></span></li>
+                            <li class="section__item"><span class="section__link">Email:<a class="section__mail" href="mailto:sales@saltgroup.com.au">sales@saltgroup.com.au</a></span></li>
                         </ul>
                     </section>
                 </div>
